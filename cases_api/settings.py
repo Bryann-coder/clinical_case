@@ -129,5 +129,5 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # L'adresse de votre frontend en développement
     "http://127.0.0.1:3000", # Parfois nécessaire aussi
-    # "https://votre-frontend-medimind.vercel.app", # <--- AJOUTEZ L'URL DE VOTRE FRONTEND QUAND IL SERA EN LIGNE
+    "https://votre-frontend-medimind.vercel.app", # <--- AJOUTEZ L'URL DE VOTRE FRONTEND QUAND IL SERA EN LIGNE
 ]
