@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     # Dépendances
     'rest_framework',
     'rest_framework.authtoken',
-    'corsheaders',  # <--- AJOUTEZ CETTE LIGNE
     # Notre app pour les comptes utilisateurs
     'accounts',
 ]
