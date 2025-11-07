@@ -131,3 +131,5 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000", # Parfois nécessaire aussi
     "https://votre-frontend-medimind.vercel.app", # <--- AJOUTEZ L'URL DE VOTRE FRONTEND QUAND IL SERA EN LIGNE
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
