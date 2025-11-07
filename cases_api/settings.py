@@ -39,13 +39,14 @@ INSTALLED_APPS = [
     # Dépendances
     'rest_framework',
     'rest_framework.authtoken',
-
+    'corsheaders',  # <--- AJOUTEZ CETTE LIGNE
     # Notre app pour les comptes utilisateurs
     'accounts',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # <--- AJOUTEZ CETTE LIGNE ICI
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -124,3 +125,11 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # L'adresse de votre frontend en développement
+    "http://127.0.0.1:3000", # Parfois nécessaire aussi
+    "https://votre-frontend-medimind.vercel.app", # <--- AJOUTEZ L'URL DE VOTRE FRONTEND QUAND IL SERA EN LIGNE
+]
+
+CORS_ALLOW_ALL_ORIGINS = True

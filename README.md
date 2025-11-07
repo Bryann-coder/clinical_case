@@ -64,9 +64,7 @@ Suivez ces étapes pour mettre en place un environnement de développement local
 
 3.  **Installer les dépendances**
     D'abord, créez un fichier `requirements.txt` s'il n'existe pas :
-    ```bash
-    pip freeze > requirements.txt
-    ```
+    
     Puis installez les dépendances :
     ```bash
     pip install -r requirements.txt
