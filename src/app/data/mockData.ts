@@ -1,0 +1,217 @@
+// import { Patient } from "@/app/types/dashboard";
+
+import { Patient, ClinicalCase, RejectedCase, ValidatedCase } from '@/app/types/dashboard';
+
+export const mockPatients: Patient[] = [
+  {
+    id: 1,
+    admittedDate: '27 Dec, 2024',
+    name: 'Dianne Russell',
+    room: 'BC5001',
+    areaOfConcern: 'Upper Abdomen General',
+    inCharge: 'Kristin',
+    status: 'Report Pending',
+    contactMethod: 'email',
+  },
+  {
+    id: 2,
+    admittedDate: '03 Feb, 2023',
+    name: 'Bessie Cooper',
+    room: 'DMK502',
+    areaOfConcern: 'Gynecologic Disorders',
+    inCharge: 'Kristin',
+    status: 'Life Support',
+    contactMethod: 'chat',
+  },
+  {
+    id: 3,
+    admittedDate: '02 Mar, 2023',
+    name: 'Marvin McKinney',
+    room: 'DMK502',
+    areaOfConcern: 'Brain, Spinal Cord, and Nerve Disorders',
+    inCharge: 'Colleen',
+    status: 'ICU',
+    contactMethod: 'phone',
+  },
+  {
+    id: 4,
+    admittedDate: '02 Mar, 2023',
+    name: 'Esther Howard',
+    room: 'DMK502',
+    areaOfConcern: 'Digestive Disorders',
+    inCharge: 'Colleen',
+    status: 'Discharged',
+    contactMethod: 'phone',
+  },
+  {
+    id: 5,
+    admittedDate: '02 Mar, 2023',
+    name: 'Marvin McKinney',
+    room: 'BC1022',
+    areaOfConcern: 'Upper Abdomen General –',
+    inCharge: 'Kristin',
+    status: 'Report Pending',
+    contactMethod: 'phone',
+  },
+  {
+    id: 6,
+    admittedDate: '02 Mar, 2023',
+    name: 'Annette Black',
+    room: 'BC1022',
+    areaOfConcern: 'Digestive Disorders',
+    inCharge: 'Colleen',
+    status: 'Report Pending',
+    contactMethod: 'chat',
+  },
+    {
+    id: 7,
+    admittedDate: '02 Mar, 2023',
+    name: 'Cameron Williamson',
+    room: 'BC1022',
+    areaOfConcern: 'Liver and Gallbladder Disorders',
+    inCharge: 'Kristin',
+    status: 'Report Pending',
+    contactMethod: 'chat',
+  },
+  {
+    id: 8,
+    admittedDate: '02 Mar, 2023',
+    name: 'Guy Hawkins',
+    room: 'BC1022',
+    areaOfConcern: 'Medical Care During Pregnancy',
+    inCharge: 'Alex',
+    status: 'Life Support',
+    contactMethod: 'email',
+  },
+];
+// app/data/mockData.ts
+import { Users, Calendar, FileText, AlertTriangle, CheckCircle } from 'lucide-react';
+
+export const statsData = [
+  {
+    title: "Total Patients",
+    value: "1,234",
+    change: "+12%",
+    trend: "up" as const,
+    icon: Users,
+    color: "blue"
+  },
+  {
+    title: "Appointments",
+    value: "48",
+    change: "+5%",
+    trend: "up" as const,
+    icon: Calendar,
+    color: "green"
+  },
+  {
+    title: "Pending Reports",
+    value: "12",
+    change: "-3%",
+    trend: "down" as const,
+    icon: FileText,
+    color: "orange"
+  },
+  {
+    title: "Critical Cases",
+    value: "8",
+    change: "+2%",
+    trend: "up" as const,
+    icon: AlertTriangle,
+    color: "red"
+  }
+];
+
+// ... keep your existing mockPatients data
+
+
+
+// app/data/mockData.ts
+export const pendingCases: ClinicalCase[] = [
+  { id: 'C-7892', pathology: 'Cardiologie', difficulty: 'Avancé', generatedDate: '15 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7891', pathology: 'Dermatologie', difficulty: 'Intermédiaire', generatedDate: '15 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7890', pathology: 'Neurologie', difficulty: 'Débutant', generatedDate: '14 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7889', pathology: 'Pneumologie', difficulty: 'Intermédiaire', generatedDate: '14 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7888', pathology: 'Orthopédie', difficulty: 'Débutant', generatedDate: '13 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7887', pathology: 'Gastro-entérologie', difficulty: 'Avancé', generatedDate: '13 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7886', pathology: 'Endocrinologie', difficulty: 'Intermédiaire', generatedDate: '12 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7885', pathology: 'Rhumatologie', difficulty: 'Débutant', generatedDate: '12 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7884', pathology: 'Urologie', difficulty: 'Avancé', generatedDate: '11 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7883', pathology: 'Néphrologie', difficulty: 'Intermédiaire', generatedDate: '11 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7882', pathology: 'Hématologie', difficulty: 'Avancé', generatedDate: '10 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7881', pathology: 'Oncologie', difficulty: 'Avancé', generatedDate: '10 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7880', pathology: 'Pédiatrie', difficulty: 'Débutant', generatedDate: '09 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7879', pathology: 'Gériatrie', difficulty: 'Intermédiaire', generatedDate: '09 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7878', pathology: 'Psychiatrie', difficulty: 'Avancé', generatedDate: '08 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7877', pathology: 'Ophtalmologie', difficulty: 'Débutant', generatedDate: '08 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7876', pathology: 'ORL', difficulty: 'Intermédiaire', generatedDate: '07 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7875', pathology: 'Stomatologie', difficulty: 'Débutant', generatedDate: '07 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7874', pathology: 'Médecine d\'urgence', difficulty: 'Avancé', generatedDate: '06 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7873', pathology: 'Médecine interne', difficulty: 'Intermédiaire', generatedDate: '06 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7872', pathology: 'Infectiologie', difficulty: 'Avancé', generatedDate: '05 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7871', pathology: 'Dermatologie', difficulty: 'Débutant', generatedDate: '05 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7870', pathology: 'Cardiologie', difficulty: 'Intermédiaire', generatedDate: '04 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7869', pathology: 'Neurologie', difficulty: 'Avancé', generatedDate: '04 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7868', pathology: 'Pneumologie', difficulty: 'Débutant', generatedDate: '03 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+];
+
+export const validatedCases: ValidatedCase[] = [
+  { id: 'C-6789', pathology: 'Cardiologie', difficulty: 'Avancé', generatedDate: '15 Juin 2024', validatedDate: '16 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-6788', pathology: 'Dermatologie', difficulty: 'Intermédiaire', generatedDate: '14 Juin 2024', validatedDate: '16 Juin 2024', expertValidator: 'Dr. Martin', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-6787', pathology: 'Neurologie', difficulty: 'Débutant', generatedDate: '14 Juin 2024', validatedDate: '15 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-6786', pathology: 'Pneumologie', difficulty: 'Avancé', generatedDate: '13 Juin 2024', validatedDate: '15 Juin 2024', expertValidator: 'Dr. Lefebvre', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-6785', pathology: 'Orthopédie', difficulty: 'Intermédiaire', generatedDate: '13 Juin 2024', validatedDate: '14 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-6784', pathology: 'Gastro-entérologie', difficulty: 'Débutant', generatedDate: '12 Juin 2024', validatedDate: '14 Juin 2024', expertValidator: 'Dr. Dubois', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-6783', pathology: 'Endocrinologie', difficulty: 'Avancé', generatedDate: '12 Juin 2024', validatedDate: '13 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-6782', pathology: 'Rhumatologie', difficulty: 'Intermédiaire', generatedDate: '11 Juin 2024', validatedDate: '13 Juin 2024', expertValidator: 'Dr. Moreau', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-6781', pathology: 'Urologie', difficulty: 'Débutant', generatedDate: '11 Juin 2024', validatedDate: '12 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-6780', pathology: 'Néphrologie', difficulty: 'Avancé', generatedDate: '10 Juin 2024', validatedDate: '12 Juin 2024', expertValidator: 'Dr. Laurent', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-6779', pathology: 'Hématologie', difficulty: 'Intermédiaire', generatedDate: '10 Juin 2024', validatedDate: '11 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-6778', pathology: 'Oncologie', difficulty: 'Avancé', generatedDate: '09 Juin 2024', validatedDate: '11 Juin 2024', expertValidator: 'Dr. Simon', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-6777', pathology: 'Pédiatrie', difficulty: 'Débutant', generatedDate: '09 Juin 2024', validatedDate: '10 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-6776', pathology: 'Gériatrie', difficulty: 'Intermédiaire', generatedDate: '08 Juin 2024', validatedDate: '10 Juin 2024', expertValidator: 'Dr. Michel', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-6775', pathology: 'Psychiatrie', difficulty: 'Avancé', generatedDate: '08 Juin 2024', validatedDate: '09 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-6774', pathology: 'Ophtalmologie', difficulty: 'Débutant', generatedDate: '07 Juin 2024', validatedDate: '09 Juin 2024', expertValidator: 'Dr. Bernard', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-6773', pathology: 'ORL', difficulty: 'Intermédiaire', generatedDate: '07 Juin 2024', validatedDate: '08 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-6772', pathology: 'Stomatologie', difficulty: 'Avancé', generatedDate: '06 Juin 2024', validatedDate: '08 Juin 2024', expertValidator: 'Dr. Durand', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-6771', pathology: 'Médecine d\'urgence', difficulty: 'Intermédiaire', generatedDate: '06 Juin 2024', validatedDate: '07 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-6770', pathology: 'Médecine interne', difficulty: 'Débutant', generatedDate: '05 Juin 2024', validatedDate: '07 Juin 2024', expertValidator: 'Dr. Petit', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-6769', pathology: 'Infectiologie', difficulty: 'Avancé', generatedDate: '05 Juin 2024', validatedDate: '06 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-6768', pathology: 'Cardiologie', difficulty: 'Intermédiaire', generatedDate: '04 Juin 2024', validatedDate: '06 Juin 2024', expertValidator: 'Dr. Robert', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-6767', pathology: 'Neurologie', difficulty: 'Débutant', generatedDate: '04 Juin 2024', validatedDate: '05 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-6766', pathology: 'Pneumologie', difficulty: 'Avancé', generatedDate: '03 Juin 2024', validatedDate: '05 Juin 2024', expertValidator: 'Dr. Richard', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-6765', pathology: 'Dermatologie', difficulty: 'Intermédiaire', generatedDate: '03 Juin 2024', validatedDate: '04 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-6764', pathology: 'Gastro-entérologie', difficulty: 'Débutant', generatedDate: '02 Juin 2024', validatedDate: '04 Juin 2024', expertValidator: 'Dr. Thomas', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-6763', pathology: 'Endocrinologie', difficulty: 'Avancé', generatedDate: '02 Juin 2024', validatedDate: '03 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-6762', pathology: 'Rhumatologie', difficulty: 'Intermédiaire', generatedDate: '01 Juin 2024', validatedDate: '03 Juin 2024', expertValidator: 'Dr. David', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-6761', pathology: 'Urologie', difficulty: 'Débutant', generatedDate: '01 Juin 2024', validatedDate: '02 Juin 2024', expertValidator: 'Dr. Haque', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-6760', pathology: 'Néphrologie', difficulty: 'Avancé', generatedDate: '31 Mai 2024', validatedDate: '02 Juin 2024', expertValidator: 'Dr. Paul', generatedBy: { name: 'IA Générateur v1.2' } },
+];
+
+export const rejectedCases: RejectedCase[] = [
+  { id: 'C-7123', pathology: 'Dermatologie', difficulty: 'Intermédiaire', generatedDate: '15 Juin 2024', rejectionReason: 'Données sources incomplètes', rejectedDate: '16 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7122', pathology: 'Cardiologie', difficulty: 'Avancé', generatedDate: '14 Juin 2024', rejectionReason: 'Diagnostic non pertinent', rejectedDate: '16 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7121', pathology: 'Neurologie', difficulty: 'Débutant', generatedDate: '14 Juin 2024', rejectionReason: 'Cas trop générique', rejectedDate: '15 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7120', pathology: 'Pneumologie', difficulty: 'Avancé', generatedDate: '13 Juin 2024', rejectionReason: 'Diagnostic non pertinent', rejectedDate: '15 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7119', pathology: 'Orthopédie', difficulty: 'Intermédiaire', generatedDate: '13 Juin 2024', rejectionReason: 'Données contradictoires', rejectedDate: '14 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7118', pathology: 'Gastro-entérologie', difficulty: 'Débutant', generatedDate: '12 Juin 2024', rejectionReason: 'Symptômes mal décrits', rejectedDate: '14 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7117', pathology: 'Endocrinologie', difficulty: 'Avancé', generatedDate: '12 Juin 2024', rejectionReason: 'Protocole obsolète', rejectedDate: '13 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7116', pathology: 'Rhumatologie', difficulty: 'Intermédiaire', generatedDate: '11 Juin 2024', rejectionReason: 'Données sources incomplètes', rejectedDate: '13 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7115', pathology: 'Urologie', difficulty: 'Débutant', generatedDate: '11 Juin 2024', rejectionReason: 'Cas trop simple', rejectedDate: '12 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7114', pathology: 'Néphrologie', difficulty: 'Avancé', generatedDate: '10 Juin 2024', rejectionReason: 'Diagnostic non pertinent', rejectedDate: '12 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7113', pathology: 'Hématologie', difficulty: 'Intermédiaire', generatedDate: '10 Juin 2024', rejectionReason: 'Données contradictoires', rejectedDate: '11 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7112', pathology: 'Oncologie', difficulty: 'Avancé', generatedDate: '09 Juin 2024', rejectionReason: 'Protocole obsolète', rejectedDate: '11 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7111', pathology: 'Pédiatrie', difficulty: 'Débutant', generatedDate: '09 Juin 2024', rejectionReason: 'Cas trop générique', rejectedDate: '10 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7110', pathology: 'Gériatrie', difficulty: 'Intermédiaire', generatedDate: '08 Juin 2024', rejectionReason: 'Symptômes mal décrits', rejectedDate: '10 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7109', pathology: 'Psychiatrie', difficulty: 'Avancé', generatedDate: '08 Juin 2024', rejectionReason: 'Données sources incomplètes', rejectedDate: '09 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7108', pathology: 'Ophtalmologie', difficulty: 'Débutant', generatedDate: '07 Juin 2024', rejectionReason: 'Diagnostic non pertinent', rejectedDate: '09 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7107', pathology: 'ORL', difficulty: 'Intermédiaire', generatedDate: '07 Juin 2024', rejectionReason: 'Données contradictoires', rejectedDate: '08 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7106', pathology: 'Stomatologie', difficulty: 'Avancé', generatedDate: '06 Juin 2024', rejectionReason: 'Protocole obsolète', rejectedDate: '08 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7105', pathology: 'Médecine d\'urgence', difficulty: 'Intermédiaire', generatedDate: '06 Juin 2024', rejectionReason: 'Cas trop simple', rejectedDate: '07 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7104', pathology: 'Médecine interne', difficulty: 'Débutant', generatedDate: '05 Juin 2024', rejectionReason: 'Symptômes mal décrits', rejectedDate: '07 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7103', pathology: 'Infectiologie', difficulty: 'Avancé', generatedDate: '05 Juin 2024', rejectionReason: 'Données sources incomplètes', rejectedDate: '06 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7102', pathology: 'Cardiologie', difficulty: 'Intermédiaire', generatedDate: '04 Juin 2024', rejectionReason: 'Diagnostic non pertinent', rejectedDate: '06 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+  { id: 'C-7101', pathology: 'Neurologie', difficulty: 'Débutant', generatedDate: '04 Juin 2024', rejectionReason: 'Cas trop générique', rejectedDate: '05 Juin 2024', generatedBy: { name: 'IA Générateur v1.0' } },
+  { id: 'C-7100', pathology: 'Pneumologie', difficulty: 'Avancé', generatedDate: '03 Juin 2024', rejectionReason: 'Protocole obsolète', rejectedDate: '05 Juin 2024', generatedBy: { name: 'IA Générateur v1.2' } },
+  { id: 'C-7099', pathology: 'Dermatologie', difficulty: 'Intermédiaire', generatedDate: '03 Juin 2024', rejectionReason: 'Données contradictoires', rejectedDate: '04 Juin 2024', generatedBy: { name: 'IA Générateur v1.1' } },
+];

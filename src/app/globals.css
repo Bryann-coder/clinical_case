@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  /* Couleurs exactes de la maquette Figma */
+  --color-medimind-primary: #9B8EFF;
+  --color-medimind-primary-hover: #8B7FFF;
+  --color-medimind-light: #F3F1FF;
+  
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+/* Gradient personnalisé pour la section auth - EXACTEMENT comme la maquette */
+@layer utilities {
+  .bg-auth-gradient {
+    background: linear-gradient(135deg, #A78BFF 0%, #9B8EFF 40%, #8B7FFF 100%);
+  }
+  
+  .text-medimind-primary {
+    color: var(--color-medimind-primary);
+  }
+  
+  .bg-medimind-primary {
+    background-color: var(--color-medimind-primary);
+  }
+  
+  .bg-medimind-primary:hover {
+    background-color: var(--color-medimind-primary-hover);
+  }
+  
+  .bg-medimind-light {
+    background-color: var(--color-medimind-light);
+  }
+  
+  .ring-medimind-primary\/20 {
+    --tw-ring-color: rgb(155 142 255 / 0.2);
+  }
+}
